@@ -42,7 +42,7 @@ export default function Hero() {
           </motion.span>
         </div>
       </div>
-      <motion.p
+      <motion.h1
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         className="mb-10 mt-4 px-4 text-2xl font-medium leading-[1.5] sm:text-4xl"
@@ -54,7 +54,7 @@ export default function Hero() {
           functional and feature-rich user experiences
         </span>{" "}
         with <span className="italic">React & Next.js</span>.
-      </motion.p>
+      </motion.h1>
       <motion.div
         initial={{ y: 100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}

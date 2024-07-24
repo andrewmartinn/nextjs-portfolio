@@ -11,6 +11,9 @@ export const metadata: Metadata = {
     "I'm a passionate Frontend Engineer with expertise in React, Next.js, and creating dynamic web experiences.",
   keywords:
     "Frontend Engineer, Web Developer, React, Next.js, TypeScript, Tailwind CSS, JavaScript",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
