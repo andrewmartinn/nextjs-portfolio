@@ -9,7 +9,7 @@ export default function Projects() {
   const { ref } = useInSectionView("Projects", 0.5);
 
   return (
-    <section ref={ref} id="projects" className="scroll-mt-28">
+    <section ref={ref} id="projects" className="mb-28 scroll-mt-28">
       <SectionHeading>Projects</SectionHeading>
       {projectsData.map((project, index) => (
         <ProjectCard key={index} {...project} />

@@ -66,3 +66,27 @@ export const projectsData = [
     imageUrl: moviesImg,
   },
 ] as const;
+
+export const skillsData = [
+  "React",
+  "Next.js",
+  "Vue",
+  "Typescript",
+  "Chakra UI",
+  "Material UI",
+  "Javascript",
+  "Tailwind CSS",
+  "Framer Motion",
+  "MobX",
+  "Context API",
+  "HTML",
+  "CSS",
+  "TypeScript",
+  "Node.js",
+  "REST API",
+  "Express",
+  "MongoDB",
+  "Git",
+  "Figma",
+  "Azure DevOps",
+] as const;
