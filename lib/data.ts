@@ -47,7 +47,7 @@ export const projectsData = [
   {
     title: "Ecommerce Cart",
     description:
-      "Ecommerce app built using Typescript where users can browse products, view product details and manage thier shopping cart by adding, removing items from the cart.",
+      "Ecommerce cart built using Typescript where users can browse products, view product details and manage thier shopping cart by adding, removing items from the cart.",
     tags: [
       "React",
       "TypeScript",
@@ -61,7 +61,7 @@ export const projectsData = [
   {
     title: "OMDB Movies",
     description:
-      "Movies app in react app allows users to search for movies and like movies, the liked movies are stored in a MobX store. Additionally the website feature dark/light theme switcher. The website data is sourced from OMDB Movies API",
+      "Movies search app allows users to search and like movies to keep track of movies also sort movies by release year or titles. Application state is managed in MobX store",
     tags: ["React", "Chakra UI", "React Router", "MobX"],
     imageUrl: moviesImg,
   },
