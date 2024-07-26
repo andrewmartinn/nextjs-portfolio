@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import ActiveSectionContextProvider from "@/context/ActiveSection";
 import { Toaster, ToastOptions } from "react-hot-toast";
+import Footer from "@/components/Footer";
 
 const outfit = Outfit({ subsets: ["latin"] });
 
@@ -37,6 +38,7 @@ export default function RootLayout({
         <ActiveSectionContextProvider>
           <Navbar />
           <main>{children}</main>
+          <Footer />
           <Toaster {...toasterProps} />
         </ActiveSectionContextProvider>
       </body>
