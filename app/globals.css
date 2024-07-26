@@ -7,3 +7,9 @@
     --line-color: #e5e7eb;
   }
 }
+
+@layer utilities {
+  .borderBlack {
+    @apply border border-black/10;
+  }
+}

@@ -3,6 +3,7 @@ import { Outfit } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import ActiveSectionContextProvider from "@/context/ActiveSection";
+import { Toaster, ToastOptions } from "react-hot-toast";
 
 const outfit = Outfit({ subsets: ["latin"] });
 
@@ -15,6 +16,10 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.ico",
   },
+};
+
+const toasterProps: ToastOptions = {
+  position: "top-right",
 };
 
 export default function RootLayout({
@@ -32,6 +37,7 @@ export default function RootLayout({
         <ActiveSectionContextProvider>
           <Navbar />
           <main>{children}</main>
+          <Toaster {...toasterProps} />
         </ActiveSectionContextProvider>
       </body>
     </html>

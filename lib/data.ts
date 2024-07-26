@@ -71,9 +71,9 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
-  "React",
+  "React.js",
   "Next.js",
-  "Vue",
+  "Vue.js",
   "Typescript",
   "Chakra UI",
   "Material UI",
