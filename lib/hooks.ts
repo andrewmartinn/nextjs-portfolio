@@ -2,12 +2,13 @@ import { useContext, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import type { ActiveSectionContextType, SectionName } from "./types";
 import { ActiveSectionContext } from "@/context/ActiveSection";
+import { SiteThemeContext } from "@/context/SiteTheme";
 
 export function useActiveSectionContext(): ActiveSectionContextType {
   const context = useContext(ActiveSectionContext);
   if (context === undefined) {
     throw new Error(
-      "ActiveSectionContext must be used within an ActiveSectionProvider",
+      "useActiveSectionContext must be used within an ActiveSectionProvider",
     );
   }
   return context;
@@ -30,3 +31,11 @@ export function useInSectionView(
 
   return { ref };
 }
+
+export const useTheme = () => {
+  const context = useContext(SiteThemeContext);
+  if (context === undefined) {
+    throw new Error("useTheme must be used within an SiteThemeProvider");
+  }
+  return context;
+};

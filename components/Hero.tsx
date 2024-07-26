@@ -58,16 +58,14 @@ export default function Hero() {
         <span className="font-bold">Hey there, I&apos;m Andrew</span>, a{" "}
         <span className="font-bold">Frontend Engineer</span> who&apos;s{" "}
         <span>enthusiastic about building</span>{" "}
-        <span className="font-bold">
-          functional and feature-rich user experiences
-        </span>{" "}
-        with <span className="italic">React & Next.js</span>.
+        <span className="font-bold">feature-rich user experiences</span> with{" "}
+        <span className="italic">React & Next.js</span>.
       </motion.h1>
       <motion.div
         initial={{ y: 100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.1 }}
-        className="flex flex-col justify-center gap-4 px-7 text-lg sm:flex-row"
+        className="flex flex-col items-center justify-center gap-4 px-7 text-lg sm:flex-row"
       >
         <Link
           href="#contact"
@@ -75,30 +73,31 @@ export default function Hero() {
             setActiveSection("Contact");
             setTimeOfLastClicked(Date.now());
           }}
-          className="group flex items-center gap-2 rounded-full bg-gray-900 px-7 py-3 font-medium text-white outline-none transition hover:scale-110 hover:bg-gray-950 focus:scale-110 active:scale-105"
+          className="group flex items-center gap-2 rounded-full bg-gray-900 px-10 py-3 font-medium text-white outline-none transition hover:scale-110 hover:bg-gray-950 focus:scale-110 active:scale-105"
         >
-          Contact me here
+          Contact me
           <BsArrowRight className="opacity-75 transition group-hover:translate-x-1" />
         </Link>
         <a
           href="/CV-Sample.pdf"
           download={true}
-          className="borderBlack group flex items-center gap-2 rounded-full bg-white px-7 py-3 outline-none transition hover:scale-110 focus:scale-110 active:scale-105"
+          className="borderBlack group flex items-center gap-2 rounded-full bg-white px-7 py-3 outline-none transition hover:scale-110 focus:scale-110 active:scale-105 dark:bg-white/10"
         >
           Download CV
           <HiDownload className="opacity-60 transition group-hover:translate-y-1" />
         </a>
+
         <a
           href=" https://www.linkedin.com/in/andrew-martin-80b898253/"
           target="_blank"
-          className="borderBlack flex items-center gap-2 rounded-full bg-white p-4 text-gray-700 transition hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15] active:scale-105"
+          className="borderBlack flex items-center gap-2 rounded-full bg-white p-4 text-gray-700 transition hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15] active:scale-105 dark:bg-white/10 dark:text-white/60"
         >
           <BsLinkedin />
         </a>
         <a
           href="https://github.com/andrewmartinn"
           target="_blank"
-          className="borderBlack flex items-center gap-2 rounded-full bg-white p-4 text-[1.35rem] text-gray-700 transition hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15] active:scale-105"
+          className="borderBlack flex items-center gap-2 rounded-full bg-white p-4 text-[1.35rem] text-gray-700 transition hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15] active:scale-105 dark:bg-white/10 dark:text-white/60"
         >
           <FaGithubSquare />
         </a>

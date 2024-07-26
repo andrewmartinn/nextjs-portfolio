@@ -23,7 +23,7 @@ export default function Contact() {
       className="mb-20 w-[min(100%,38rem)] scroll-mt-28 text-center sm:mb-28"
     >
       <SectionHeading>Contact</SectionHeading>
-      <p className="-mt-6 text-gray-700">
+      <p className="-mt-6 text-gray-700 dark:text-white/80">
         Please contact me directly at{" "}
         <a href="mailto:avm.andrewmartin@gmail.com" className="underline">
           avm.andrewmartin@gmail.com
@@ -42,20 +42,20 @@ export default function Contact() {
 
           toast.success("Email sent sucessfully");
         }}
-        className="mt-10 flex flex-col"
+        className="mt-10 flex flex-col dark:text-black"
       >
         <input
           type="email"
           name="senderEmail"
           placeholder="Your email"
-          className="borderBlack h-14 rounded-lg px-4"
+          className="borderBlack h-14 rounded-lg px-4 transition-all dark:bg-white dark:bg-opacity-80 dark:outline-none dark:focus:bg-opacity-100"
           required
           maxLength={500}
         />
         <textarea
           name="message"
           placeholder="Your message"
-          className="borderBlack my-3 h-52 rounded-lg p-4"
+          className="borderBlack my-3 h-52 rounded-lg p-4 dark:bg-white dark:bg-opacity-80 dark:outline-none dark:focus:bg-opacity-100"
           required
           maxLength={5000}
         />
