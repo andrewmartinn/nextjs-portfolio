@@ -1,7 +1,9 @@
 # Andrew Martin | Nextjs Portfolio
 
 
-This is my personal portfolio website built with Next.js, showcasing information about myself. It includes sections for about, projects, skills, experience, and a contact form.
+This is my personal portfolio website built with Next.js, showcasing information about myself. It includes sections for about, projects, skills, experience, and a contact form. Project deployed on Vercel.
+
+[View Live Demo](https://andrewmartin-portfolio-tau-azure.vercel.app/)
 
 ## Screenshots
 Homepage light
