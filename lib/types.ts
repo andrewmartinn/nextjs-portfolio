@@ -1,7 +1,5 @@
 import { SetStateAction } from "react";
 
-import { Theme } from "@react-email/components";
-
 import { navLinks, projectsData } from "./data";
 
 export type SectionName = (typeof navLinks)[number]["name"];

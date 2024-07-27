@@ -1,36 +1,93 @@
+# Andrew Martin | Nextjs Portfolio
+
+This is my personal portfolio website built with Next.js, showcasing information about myself. It includes sections for about, projects, skills, experience, and a contact form.
+
+## Technologies Used
+
+- [Next.js](https://nextjs.org/): React framework for server-side rendering and static site generation.
+- [React](https://reactjs.org/): JavaScript library for building user interfaces.
+- [Tailwind CSS](https://tailwindcss.com/): A utility-first CSS framework for rapid UI development.
+- [TypeScript](https://www.typescriptlang.org/): A superset of JavaScript that adds static typing.
+- [Framer Motion](https://www.framer.com/motion/): Animation library for React.
+- [React Intersection Observer](https://www.npmjs.com/package/react-intersection-observer): React implementation of the Intersection Observer API for handling viewport-based triggers.
+- [React Hot Toast](https://react-hot-toast.com/): Library for creating customizable toast notifications.
+- [React Icons](https://react-icons.github.io/react-icons/): A library containing popular icons for React projects.
+- [React Email Components](https://react-email-components.dev/): Library for building email templates with React.
+- [Resend](https://resend.com/): API for sending transactional emails.
+- [React Vertical Timeline Component](https://www.npmjs.com/package/react-vertical-timeline-component): React component for creating vertical timelines.
+
+## Project Features
+
+- **Dynamic Navigation:** The website includes a dynamic navigation menu that updates based on the active section, providing a seamless user experience.
+- **Animated Sections:** Integrated animations using for smooth transitions and scroll-based animations.
+- **Light and Dark Mode:** The website supports light and dark themes.
+- **About, Projects, Skills, and Experience Sections:** Comprehensive sections showcasing information on projects, skills, and professional experience.
+- **Contact Form:** A fully functional contact form powered by Resend and React Email for handling form submissions.
+
+## Project Outcomes
+
+- **Understanding Key Next.js concepts:** Gained hands-on experience with Next.js 14, including its features such as the app directory, server actions, and integration with React.
+- **Development with TypeScript:** Understanding and defining typesafte data and integrating it with react components.
+- **Dynamic Theming and Context Management:** Implemented a light and dark mode feature, learning how to manage themes using local storage and React Context API by centralizing global application state and providing/consuming the state accross the application using context providers and custom hooks.
+- **Advanced Animation Techniques:** Applied Framer Motion for animations and React Intersection Observer for scroll-based effects, enhancing user interaction.
+- **Contact Form Submission:** Successfully integrated Resend and Nextjs Server Action to handle form submissions and customizing email template using React Email.
+- **Responsive Design Skills:** Enhanced skills in creating responsive designs, ensuring that the website performs well across different devices and screen sizes.
+
+## Project Setup
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+To get started with this Next.js portfolio site, follow these steps:
 
-First, run the development server:
+### 1. Clone the Repository
+
+First, clone the repository to your local machine:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/your-username/your-repository-name.git
+cd your-repository-name
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Install Dependencies
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Install the project dependencies using Yarn:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```bash
+yarn install
+```
 
-## Learn More
+### 3. Create Environment File
 
-To learn more about Next.js, take a look at the following resources:
+Create a .env.local file in the root directory of the project to store your environment variables. Add your Resend API key as follows:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+RESEND_API_KEY=your-resend-api-key
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Replace your-resend-api-key with your actual API key from Resend.
 
-## Deploy on Vercel
+### 4. Run the Development Server
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Start the Next.js development server:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```bash
+yarn dev
+```
+
+The application will be available at http://localhost:3000.
+
+### 5. Build for Production
+
+To build the project for production, run:
+
+```bash
+yarn build
+```
+
+### 6. Deploy the Project
+
+For deploying the project, use the following command:
+
+```bash
+yarn run deploy
+```
