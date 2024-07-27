@@ -1,9 +1,10 @@
 "use client";
 
 import { skillsData } from "@/lib/data";
-import SectionHeading from "./SectionHeading";
 import { useInSectionView } from "@/lib/hooks";
 import { animate, motion, Variants } from "framer-motion";
+
+import SectionHeading from "./SectionHeading";
 
 const itemVariants: Variants = {
   initial: {

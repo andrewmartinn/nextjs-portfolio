@@ -1,6 +1,7 @@
-import giphyImg from "@/public/giphy-preview.png";
 import React from "react";
+
 import ecommerceCartImg from "@/public/ecommerce-preview.png";
+import giphyImg from "@/public/giphy-preview.png";
 import moviesImg from "@/public/omdb-preview.png";
 import { CgWebsite, CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
@@ -64,7 +65,7 @@ export const projectsData = [
   {
     title: "OMDB Movies",
     description:
-      "Movies search app allows users to search and like movies to keep track of movies also sort movies by release year or titles. Application state is managed in MobX store",
+      "Movies search app allows users to search and like movies to keep track of movies also sort movies by release year or titles. Application state is managed on MobX store",
     tags: ["React", "Chakra UI", "React Router", "MobX"],
     imageUrl: moviesImg,
   },

@@ -1,9 +1,10 @@
 "use client";
 
 import { projectsData } from "@/lib/data";
+import { useInSectionView } from "@/lib/hooks";
+
 import ProjectCard from "./ProjectCard";
 import SectionHeading from "./SectionHeading";
-import { useInSectionView } from "@/lib/hooks";
 
 export default function Projects() {
   const { ref } = useInSectionView("Projects", 0.5);

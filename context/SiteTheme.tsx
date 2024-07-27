@@ -1,11 +1,12 @@
 "use client";
 
+import { createContext, useEffect, useState } from "react";
+
 import {
   SiteThemeContextType,
   SiteThemeProviderProps,
   ThemeType,
 } from "@/lib/types";
-import { createContext, useEffect, useState } from "react";
 
 export const SiteThemeContext = createContext<SiteThemeContextType | undefined>(
   undefined,

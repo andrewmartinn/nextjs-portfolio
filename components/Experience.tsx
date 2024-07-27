@@ -4,11 +4,15 @@ import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
+
 import "react-vertical-timeline-component/style.min.css";
-import SectionHeading from "./SectionHeading";
-import { experiencesData } from "@/lib/data";
+
 import React from "react";
+
+import { experiencesData } from "@/lib/data";
 import { useInSectionView, useTheme } from "@/lib/hooks";
+
+import SectionHeading from "./SectionHeading";
 
 export default function Experience() {
   const { ref } = useInSectionView("Experience");

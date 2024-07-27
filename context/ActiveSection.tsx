@@ -1,6 +1,7 @@
 "use client";
 
 import { createContext, useState } from "react";
+
 import type {
   ActiveSectionContextType,
   ActiveSectionProviderProps,
