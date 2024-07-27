@@ -1,6 +1,21 @@
 # Andrew Martin | Nextjs Portfolio
 
+
 This is my personal portfolio website built with Next.js, showcasing information about myself. It includes sections for about, projects, skills, experience, and a contact form.
+
+## Screenshots
+Homepage light
+![nextjs-portfolio-header](https://github.com/user-attachments/assets/e9838195-b839-475f-814d-6b72f99a277e)
+
+Homepage dark
+![nextjs-portfolio-header-dark](https://github.com/user-attachments/assets/ca0d2d5d-61fd-4030-9222-20517553e533)
+
+Projects section
+![nextjs-portfolio-projects](https://github.com/user-attachments/assets/b6074474-d903-4fd9-ac1b-e5454a42e00b)
+
+Skills section
+![nextjs-portfolio-skills](https://github.com/user-attachments/assets/0a7dab88-ba2a-4a01-8af3-bf73fd7758dd)
+
 
 ## Technologies Used
 
